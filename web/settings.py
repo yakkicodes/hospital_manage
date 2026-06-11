@@ -45,6 +45,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'app',
     'widget_tweaks',
+    'cloudinary_storage',
+    'cloudinary',
 ]
 
 MIDDLEWARE = [
@@ -55,7 +57,7 @@ MIDDLEWARE = [
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',    
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
 ROOT_URLCONF = 'web.urls'
@@ -150,7 +152,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STORAGES = {
     "default": {
-        "BACKEND": "django.core.files.storage.FileSystemStorage",
+        "BACKEND": "cloudinary_storage.storage.MediaCloudinaryStorage", # മീഡിയ ഫയലുകൾക്ക് വേണ്ടി
     },
     "staticfiles": {
         "BACKEND": "whitenoise.storage.CompressedStaticFilesStorage",
