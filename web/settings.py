@@ -141,7 +141,9 @@ if 'RENDER' in os.environ:
         default=os.environ.get('DATABASE_URL'),
         conn_max_age=600
     )
-
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
 # സ്റ്റാറ്റിക് & മീഡിയ ഫയലുകൾ (WhiteNoise സ്റ്റോറേജ്)
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
