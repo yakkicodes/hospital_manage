@@ -1,0 +1,79 @@
+ li:hover{
+            list-style: none;
+            background-color: #2f7e6d;
+            color: white;
+            border: 5px solid rgb(168, 162, 162);
+            border-radius: 5px;
+        }
+
+li{
+            
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.department-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #a71616;
+    border-radius: 20px;
+    height: 100%;
+    position: relative;
+    top: 10px;
+}
+#department {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 100px 100px 200px rgb(252, 5, 5);
+    padding: 10px 20px;
+}
+#parag {
+    font-size: 18px;
+    text-align: center;
+    max-width: 600px;
+}
+.department-container::selection {
+    background-color: #ff0000;
+    color: white;
+    background-color: chartreuse;
+    background-size: cover;
+    background-position: center;
+}
+.text-center.fs-1.font-weight-bold:hover {
+    color: red;
+    
+}
+.confirm-image {
+    animation-name: moving;
+    animation-duration: 2s;
+}
+@keyframes moving {
+    0% {
+        left: 0px;
+    }
+    50% {
+        left: 20px;
+    }
+    100% {
+        left: 0px;
+    }
+}
+.bg-gradient {
+  background-image:  linear-gradient(to bottom left ,rgb(218, 218, 220),rgb(172, 172, 209),rgb(111, 111, 162))
+}
+    /* റേറ്റിംഗ് കാർഡിന്റെ ഭംഗി കൂട്ടാൻ */
+        .rating-card {
+            border: none;
+            border-radius: 16px;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        /* മൗസ് മുകളിൽ വെക്കുമ്പോൾ ചെറുതായി പൊന്തിവരുന്ന ഇഫക്റ്റ് */
+        .rating-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08) !important;
+        }
