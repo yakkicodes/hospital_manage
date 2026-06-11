@@ -160,3 +160,6 @@ STORAGES = {
 }
 MEDIA_ROOT = os.path.join(BASE_DIR, 'Upload')
 MEDIA_URL = '/media/'
+CLOUDINARY_STORAGE = {
+    'MEDIA_TAG': 'media'
+}
