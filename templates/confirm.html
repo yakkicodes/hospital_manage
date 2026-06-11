@@ -1,0 +1,29 @@
+{% extends 'base.html'%}
+{% block title%}
+Confirm
+{% endblock %}
+{% block content %}
+<div class="container d-flex justify-content-center my-5">
+   <div class="card shadow-lg border-0 text-center p-4 rounded-4" style="max-width: 450px; background: linear-gradient(135deg, #e0f7fa 0%, #ffffff 100%);">
+      
+      <div class="mb-3">
+         <div class="bg-success bg-opacity-10 d-inline-block rounded-circle p-3">
+            <img id="confirm-image" src="/static/images/confirm.png" alt="Confirmation Image" style="width: 50px; height: 50px; object-fit: contain;">
+         </div>
+      </div>
+
+      <h4 class="fw-bold text-success mb-2">Booking Confirmed!</h4>
+      <p class="text-muted px-3">We will call you later. Thank you for choosing us.</p>
+      
+      <hr class="my-3 text-muted opacity-25">
+
+      <div class="d-flex justify-content-center mt-2"></div>
+         <button onclick="window.location.href='/booking/'" class="btn btn-outline-success d-flex align-items-center gap-2 px-4 py-2 rounded-pill shadow-sm" style="transition: all 0.3s ease;">
+            <img src="/static/images/images.png" alt="Return" style="width: 20px; height: 20px;">
+            <span class="fw-semibold small">Return to Booking</span>
+         </button>
+      </div>
+
+   </div>
+</div>
+{% endblock %}   

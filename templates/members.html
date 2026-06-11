@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block title %}
+Doctors
+{% endblock %}
+
+{% block content %}
+<h1 class="text-center my-4 mx-5 fs-1 text-light-emphasis">HOSPITAL DOCTORS</h1>
+<hr>
+
+<div class="container">
+  <div class="row justify-content-center">
+    
+    {% for member in members %}
+    <div class="col-12 col-sm-6 col-md-4 my-3 d-flex justify-content-center">
+      
+      <div class="card text-center h-100" style="width: 18rem; background-color: #f8f9fa; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
+        <img src="{{ member.m_image.url }}" alt="{{ member.m_name }}" class="card-img-top" style="border-top-left-radius: 10px; border-top-right-radius: 10px; height: 250px; object-fit: cover;">
+        
+        <div class="card-body">
+          <h3 class="card-title h3 font-weight-bold">Dr. {{ member.m_name }}</h3>
+          <h4 class="card-subtitle mb-2 text-muted h6">{{ member.m_department }} Department</h4>
+          <p class="card-text text-secondary" style="font-size: 0.9rem;">{{ member.m_field }}</p>
+        </div>
+
+      </div>  
+    </div>
+    {% endfor %}
+
+  </div> </div> {% endblock %}

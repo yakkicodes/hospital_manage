@@ -1,0 +1,23 @@
+{% extends 'base.html'%}
+{% block title%}
+Booking
+{% endblock %}
+{% load widget_tweaks %}
+{% block content %}
+
+    
+    <hr>
+    <form method="post" action="" class="container p-4 bg-light rounded shadow" style="width: 90%;">
+        {% csrf_token %}
+        <h1 class="text-center my-4 mx-5 fs-1 text-light-emphasis mb-4">BOOKING APPOINTMENT</h1>
+        <hr>
+        {% for field in form %}
+            <div class="mb-3">
+            <label class="form-label fw-semibold">{{ field.label }}</label>
+            {% render_field field class="form-control" %}
+            </div>
+        {% endfor %} 
+        <button class="btn btn-primary w-100">Submit</button>
+    </form>
+</div>
+{% endblock %}

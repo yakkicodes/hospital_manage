@@ -1,0 +1,120 @@
+
+{% extends 'base.html'%}
+{% block title%}
+Detials 
+{% endblock %}
+{% block content %}
+
+<div class="container my-5 details-body">
+    <div id="co" class="text-center mb-5 p-5 hero-card rounded-4 shadow-sm text-black  bg-primary bg-gradient">
+        <h1 class="display-4 fw-bold mb-3 text-uppercase tracking-wide">Care & Cure Hospital</h1>
+        <p class="fs-5 opacity-90 fw-light">Your Health, Our Priority. Committed to Excellence in Healthcare.</p>
+        <span class="badge bg-white text-primary px-3 py-2 rounded-pill fw-bold shadow-sm">
+            📍 Malappuram, Kerala, India
+        </span>
+    </div>
+
+    <div class="row g-4">
+        <div class="col-lg-8">
+            <div class="card custom-card shadow-sm p-4 bg-white mb-4">
+                <h3 class="fw-bold text-primary mb-3 d-flex align-items-center gap-2">
+                    🏢 About Our Hospital
+                </h3>
+                <p class="text-muted lh-lg fs-6">
+                    For over 25 years, Care & Cure Hospital has been a trusted leader in providing world-class healthcare services. Equipped with state-of-the-art medical technology and a team of highly experienced doctors, we ensure compassionate care and international safety standards for every patient.
+                </p>
+                
+                <hr class="my-4 opacity-25">
+
+                <h4 class="fw-bold text-secondary mb-3">Key Features & Amenities</h4>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <div class="p-3 bg-light rounded-3 d-flex align-items-center gap-3">
+                            <span class="fs-3 text-success">🚑</span>
+                            <div>
+                                <h6 class="fw-bold mb-0">24/7 Emergency Care</h6>
+                                <small class="text-muted">Round-the-clock trauma & ambulance services</small>
+                                <a href="tel:+910000000000" >
+                                    <li><h6 class="fw-bold mb-0">Contact: +91 0000000000</h6></li>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-3 bg-light rounded-3 d-flex align-items-center gap-3">
+                            <span class="fs-3 text-danger">🧪</span>
+                            <div>
+                                <h6 class="fw-bold mb-0">Advanced Diagnostic Lab</h6>
+                                <small class="text-muted">Accurate testing with modern equipment</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-3 bg-light rounded-3 d-flex align-items-center gap-3">
+                            <span class="fs-3 text-danger">🏥</span>
+                            <div>
+                                <h6 class="fw-bold mb-0">Sanitation & Compliance </h6>
+                                <small class="text-muted"> Regulated infection control measures and isolated HVAC environments</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-3 bg-light rounded-3 d-flex align-items-center gap-3">
+                            <span class="fs-3 text-danger">🏨</span>
+                            <div>
+                                <h6 class="fw-bold mb-0">Specialized Wards </h6>
+                                <small class="text-muted"> Outpatient clinics (OPD) and inpatient nursing beds tailored to specific medical disciplines</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-3 bg-light rounded-3 d-flex align-items-center gap-3">
+                            <span class="fs-3 text-danger">🥼</span>
+                            <div>
+                                <h6 class="fw-bold mb-0">Surgical Suites </h6>
+                                <small class="text-muted"> State-of-the-art operating theaters designed for minimally invasive, general, and specialized surgeries</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-3 bg-light rounded-3 d-flex align-items-center gap-3">
+                            <span class="fs-3 text-danger">🏩</span>
+                            <div>
+                                <h6 class="fw-bold mb-0">Specialized Clinics </h6>
+                                <small class="text-muted">  Dedicated spaces for pediatrics, oncology, cardiology, neurology, and orthopedics</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="card custom-card shadow-sm p-4 bg-dark text-white mb-4">
+                <h4 class="fw-bold text-info mb-3">🕒 Working Hours</h4>
+                <ul class="list-unstyled mb-0">
+                    <li class="d-flex justify-content-between py-2 border-bottom border-secondary">
+                        <span>Monday - Saturday</span>
+                        <span class="fw-bold text-warning">08:00 AM - 08:00 PM</span>
+                    </li>
+                    <li class="d-flex justify-content-between py-2">
+                        <span>Sunday</span>
+                        <span class="text-danger fw-bold">Emergency Only</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="card custom-card shadow-sm p-4 bg-white text-center">
+                <h5 class="fw-bold mb-2 text-dark">Need a Consultation?</h5>
+                <p class="text-muted small">Skip the waiting queue by booking your token online instantly.</p>
+                <a href="{% url 'booking' %}" class="btn btn-primary w-100 py-3 fw-bold rounded-pill shadow-sm text-uppercase" id ='appo'>
+                    📅 Book Appointment Now
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
+
